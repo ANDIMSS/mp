@@ -1,20 +1,10 @@
 import type { HeroCta, HeroDeviceConfig, HeroScene } from "./hero.types";
 
-/**
- * Panorâmicas reais (Pexels) recortadas em 21:9 no desktop — a largura excede a
- * viewport, então o pan tem curso; no mobile usamos o mesmo frame em retrato.
- */
-const shot = (id: number, ext: "jpeg" | "png", w: number, h: number) =>
-  `https://images.pexels.com/photos/${id}/pexels-photo-${id}.${ext}?auto=compress&cs=tinysrgb&fit=crop&w=${w}&h=${h}`;
-
-const wide = (id: number, ext: "jpeg" | "png" = "jpeg") => shot(id, ext, 2688, 1152);
-const tall = (id: number, ext: "jpeg" | "png" = "jpeg") => shot(id, ext, 1080, 1400);
-
 export const heroScenes: HeroScene[] = [
   {
     id: 1,
-    desktopSrc: wide(10339605),
-    mobileSrc: tall(10339605),
+    desktopSrc: "https://assets.zyrosite.com/EdFKTcLdQSxzGH5L/2-1-l1VrFmmcnUIAcqfI.webp",
+    mobileSrc: "https://assets.zyrosite.com/EdFKTcLdQSxzGH5L/2-1-l1VrFmmcnUIAcqfI.webp",
     direction: "view-left-to-right",
     chapter: "Problema",
     headline: "Toda empresa sente os sintomas. Poucas encontram a causa.",
@@ -26,8 +16,8 @@ export const heroScenes: HeroScene[] = [
   },
   {
     id: 2,
-    desktopSrc: wide(10027239),
-    mobileSrc: tall(10027239),
+    desktopSrc: "https://assets.zyrosite.com/EdFKTcLdQSxzGH5L/2-2-fd9ejMXG7M1DNbq3.webp",
+    mobileSrc: "https://assets.zyrosite.com/EdFKTcLdQSxzGH5L/2-2-fd9ejMXG7M1DNbq3.webp",
     direction: "view-right-to-left",
     chapter: "Sistema",
     headline: "Nenhum problema existe sozinho.",
@@ -40,8 +30,8 @@ export const heroScenes: HeroScene[] = [
   },
   {
     id: 3,
-    desktopSrc: wide(17483874, "png"),
-    mobileSrc: tall(17483874, "png"),
+    desktopSrc: "https://assets.zyrosite.com/EdFKTcLdQSxzGH5L/2-3-IxTffUdbD5j17OSD.webp",
+    mobileSrc: "https://assets.zyrosite.com/EdFKTcLdQSxzGH5L/2-3-IxTffUdbD5j17OSD.webp",
     direction: "view-left-to-right",
     chapter: "Método",
     headline: "Perceber. Decidir. Agir.",
@@ -54,8 +44,8 @@ export const heroScenes: HeroScene[] = [
   },
   {
     id: 4,
-    desktopSrc: wide(6950048),
-    mobileSrc: tall(6950048),
+    desktopSrc: "https://assets.zyrosite.com/EdFKTcLdQSxzGH5L/2-4-tZrGWiB4DP7ZLA7w.webp",
+    mobileSrc: "https://assets.zyrosite.com/EdFKTcLdQSxzGH5L/2-4-tZrGWiB4DP7ZLA7w.webp",
     direction: "view-right-to-left",
     chapter: "Transformação",
     headline: "O improviso termina quando o método começa.",
@@ -70,8 +60,8 @@ export const heroScenes: HeroScene[] = [
   },
   {
     id: 5,
-    desktopSrc: wide(18201085),
-    mobileSrc: tall(18201085),
+    desktopSrc: "https://assets.zyrosite.com/EdFKTcLdQSxzGH5L/2-5-L0YN3NizBZGrR5uP.webp",
+    mobileSrc: "https://assets.zyrosite.com/EdFKTcLdQSxzGH5L/2-5-L0YN3NizBZGrR5uP.webp",
     direction: "view-left-to-right",
     chapter: "Patrimônio",
     headline: "Crescer é importante. Construir valor é maior.",

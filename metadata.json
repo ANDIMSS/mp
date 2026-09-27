@@ -1,0 +1,6 @@
+{
+  "name": "MP 365 — Método que constrói patrimônio",
+  "description": "MP 365 — Agente Neural Empresarial. Estruturamos empresas de médio porte para operar, crescer e construir patrimônio com o método Perceber · Decidir · Agir.",
+  "requestFramePermissions": [],
+  "capabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
